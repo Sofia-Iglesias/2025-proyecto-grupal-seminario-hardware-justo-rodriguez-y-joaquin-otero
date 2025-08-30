@@ -3,6 +3,8 @@
 `Tecnología de los Sistemas de Información - Seminario Avanzado`  
 `Ciclo Lectivo 2025`
 
+`https://docs.google.com/document/d/1CEOc_LQZYIa5_urYyw35toZmKpGZbSGTh1Yp3esoAxM/edit?tab=t.0`
+
 ## **`Integrante/s`**
 
 - `Justo Rodriguez`  
