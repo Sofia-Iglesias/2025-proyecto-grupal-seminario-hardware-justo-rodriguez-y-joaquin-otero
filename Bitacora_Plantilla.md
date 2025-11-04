@@ -1,12 +1,12 @@
-# **`Bitácora de (Nombre del Proyecto)`**
+# **`Bitácora de SecuriTIC`**
 
 `Tecnología de los Sistemas de Información - Seminario Avanzado`  
 `Ciclo Lectivo 2025`
 
 ## **`Integrante/s`**
 
-- `Nombre 1`  
-- `Nombre 2`
+- `Justo Rodriguez`  
+- `Joaco Otero`
 
 
 ---
@@ -14,22 +14,23 @@
 
 ## **`Semana 1`**
 
-**`Fecha:`**
+**`Fecha: 28/10/2025`**
 
 **`Actividades Realizadas:`**
 
-- `Actividad 1`  
-- `Actividad 2`
+- `Diseño del sistema de alarma con tres sensores (puerta, ventana y movimiento)`  
+- `Identificación de las salidas: sirena, luz de alarma, LED de alarma activada y LED de ok`
+- `Definición de la lógica de funcionamiento del circuito`
 
 **`Dificultades:`**
 
-- `Dificultad 1`  
-- `Dificultad 2`
+- `Conexión correcta de los sensores en el protoboard`  
+- `Problemas iniciales con la activación simultánea de la luz y la sirena`
 
 **`Próximos Pasos:`**
 
-- `Próximo paso 1`  
-- `Próximo paso 2`
+- `Probar el circuito completo con todos los sensores activos`  
+- `Agregar un retardo para la desactivación de la alarma`
 
 
 ---
@@ -37,19 +38,20 @@
 
 ## **`Semana 2`**
 
-**`Fecha:`**
+**`Fecha: 04/11/2025`**
 
 **`Actividades Realizadas:`**
 
-- `Actividad 1`  
-- `Actividad 2`
+- `Programación del sistema en Arduino para controlar entradas y salidas`  
+- `Prueba de la sirena y el LED de alarma activada al detectar movimiento o apertura`
+- `Verificación del correcto funcionamiento del LED de ok cuando no hay alertas`
 
 **`Dificultades:`**
 
-- `Dificultad 1`  
-- `Dificultad 2`
+- `Falsas detecciones del sensor de movimiento por interferencias`  
+- `Ajuste del umbral de detección del sensor de puerta`
 
 **`Próximos Pasos:`**
 
-- `Próximo paso 1`  
-- `Próximo paso 2`
+- `Optimizar el código para evitar activaciones erróneas`  
+- `Diseñar la carcasa del sistema y documentar el proyecto final`
