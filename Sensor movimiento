@@ -1,0 +1,39 @@
+Sensor de movimiento:
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+ Es un sensor. Su función principal es detectar el movimiento de personas u objetos en el ambiente a través de los cambios en la radiación infrarroja. Cuando una persona pasa frente al sensor, este percibe la variación y envía una señal al Arduino para indicar que se detectó movimiento.
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+ Utiliza una señal digital, que puede tener dos estados posibles: encendido (HIGH) cuando detecta movimiento y apagado (LOW) cuando no hay movimiento.
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+ El sensor entrega una señal de 0 voltios (LOW) cuando no hay movimiento y de 5 voltios (HIGH) cuando detecta movimiento en su rango de acción.
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+ El sensor de movimiento tiene tres pines. El primer pin se llama VCC y se conecta a la salida de 5 voltios del Arduino para alimentar el sensor. El segundo pin se llama GND y se conecta a tierra. El tercer pin se llama OUT y es el que envía la señal digital al Arduino cuando se detecta movimiento.
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+ El sensor de movimiento se conecta al pin digital número 2 del Arduino. Este pin se eligió porque puede configurarse como entrada digital y, además, permite utilizar interrupciones si se quiere detectar el movimiento de manera rápida y precisa.
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+ El pin VCC del sensor se conecta a 5 voltios del Arduino. El pin GND del sensor se conecta al pin GND del Arduino. El pin OUT del sensor se conecta al pin digital número 2 del Arduino. Este sensor no necesita resistencias externas, ya que su salida es digital y estable.
+
+¿Cuál es el principio de funcionamiento del componente?
+ El sensor de movimiento funciona detectando cambios en la radiación infrarroja del entorno. Los cuerpos, como las personas o animales, emiten calor que el sensor puede captar. Cuando alguien pasa frente al sensor, este detecta una variación de calor y envía una señal eléctrica al Arduino indicando que se produjo movimiento.
+
+¿Utiliza alguna librería particular para programarlo?
+ No utiliza ninguna librería adicional. Se programa utilizando las funciones básicas del lenguaje de Arduino, como pinMode para definir el tipo de pin y digitalRead para leer el valor que entrega el sensor.
+
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+ En el programa se lee el valor del sensor con la función digitalRead. Si el valor que devuelve es HIGH, significa que el sensor detectó movimiento. Si el valor es LOW, significa que no hay movimiento.
+
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+ El sensor de movimiento necesita un tiempo de entre 30 y 60 segundos para calibrarse correctamente al encenderse, por lo que durante ese período puede enviar lecturas incorrectas. No debe colocarse frente a una fuente de calor o luz solar directa, ya que podría activarse por error. Además, debe alimentarse con una tensión estable de 5 voltios.
+
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+ Se puede realizar una prueba simple conectando el sensor a un Arduino con un diodo emisor de luz (LED) que se encienda al detectar movimiento. También se puede observar el valor en el monitor serial del programa de Arduino. Si el valor cambia a 1 cuando una persona pasa frente al sensor y vuelve a 0 después de unos segundos, el componente funciona correctamente.
+
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+ Cuando no haya movimiento, el valor leído será LOW o 0. Cuando el sensor detecte movimiento, el valor cambiará a HIGH o 1, y se encenderá el diodo emisor de luz (LED) o el elemento que se haya programado.
+
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+ El sensor de movimiento puede fallar si no recibe la alimentación correcta o si su lente está sucia o dañada. También puede producir lecturas erróneas si está colocado muy cerca de una fuente de calor. En el código se puede notar un mal funcionamiento si el valor leído nunca cambia, por ejemplo si siempre marca 0 aunque haya movimiento o si permanece en 1 sin motivo aparente.
