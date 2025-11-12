@@ -1,0 +1,41 @@
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+Es un sensor. Su función es permitirle al usuario enviar una orden al Arduino mediante una presión mecánica, cerrando o abriendo un circuito eléctrico.
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+Utiliza una señal digital (HIGH o LOW).
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+Puede entregar dos valores: HIGH cuando el pulsador está presionado y LOW cuando no lo está, o viceversa dependiendo de cómo se conecte.
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+Tiene dos pares de patas internas conectadas entre sí. Cuando se presiona, se cierran los contactos entre ambos lados del pulsador y permite el paso de la corriente.
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+Se conecta a un pin digital del Arduino, por ejemplo D2. Se usa un pin digital porque el pulsador genera una señal de dos estados (HIGH o LOW).
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+Una pata del pulsador se conecta a 5V y la otra al pin digital (por ejemplo D2). Entre ese mismo pin y GND se coloca una resistencia de 10kΩ como resistencia a tierra (pull-down). Otra opción es usar INPUT_PULLUP en el Arduino y conectar el pulsador entre el pin y GND, sin resistencia externa.
+
+¿Cuál es el principio de funcionamiento del componente?
+Funciona cerrando o abriendo un circuito. Cuando se presiona el botón, se permite el paso de la corriente y cambia el estado lógico del pin del Arduino.
+
+¿Utiliza alguna librería particular para programarlo?
+No utiliza librerías. Solo se usa digitalRead para leer si el pulsador está presionado o no.
+
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+Se usa digitalRead(pin) para obtener el valor. Si el pulsador está presionado, el pin lee HIGH (o LOW si se usa pull-up). Si no está presionado, lee LOW (o HIGH con pull-up).
+
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+No conectar el pulsador directamente entre 5V y GND sin pasar por el pin digital. Usar siempre resistencia pull-down o activar INPUT_PULLUP para evitar lecturas inestables.
+
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Conectar el pulsador, leer su estado con digitalRead y mostrar el valor en el monitor serie. Si al presionar el pulsador el valor cambia entre HIGH y LOW, está funcionando bien.
+
+Simular en Tinkercad e incluir el link de la simulación.
+https://www.tinkercad.com/things/lDd0jTcQiw0-pulsador/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard
+
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+Espero ver HIGH en el monitor serie cuando se presiona el pulsador y LOW cuando no está presionado.
+
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Puede fallar si está mal cableado, si falta la resistencia pull-down o si no está configurado como INPUT_PULLUP. Se detecta si el monitor serie no cambia de estado al presionar el pulsador o si el valor cambia aleatoriamente sin presionarlo.
