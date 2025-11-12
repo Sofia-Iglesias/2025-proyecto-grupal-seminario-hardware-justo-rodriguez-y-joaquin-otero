@@ -1,48 +1,64 @@
-# **`Nombre del Proyecto`**
+# **`alarma`**
 
 `Tecnología de los Sistemas de Información - Seminario Avanzado`  
 `Ciclo Lectivo 2025`
 
+`https://docs.google.com/document/d/1CEOc_LQZYIa5_urYyw35toZmKpGZbSGTh1Yp3esoAxM/edit?tab=t.0`
+
 ## **`Integrante/s`**
 
-- `Nombre 1`  
-- `Nombre 2`
+- `Justo Rodriguez`  
+- `Joaquin Otero`
 
 ## **`Objetivo`**
 
-`Breve descripción del propósito del proyecto. Completar una vez definido el proyecto.`
+`“El proyecto busca diseñar y armar una alarma casera 100 % hardware que detecte movimiento, apertura y vibración. 
+Al activarse, encenderá una sirena y luces indicadoras para alertar intrusiones.”`
 
 ## **`Descripción del Proyecto`**
 
-`Explicar en qué consiste y qué se busca lograr. Completar una vez definido el proyecto.`
+`Consiste en construir una alarma casera con tres sensores (movimiento, apertura y vibración) que activen una sirena y luces de estado.
+Se busca lograr un sistema simple y económico para alertar intrusiones sin necesidad de programación.`
 
 ## **`Componentes`**
 
-- `Componente 1`  
-- `Componente 2`  
-- `Componente 3`
-
-`Completar una vez definido el proyecto.`
+- `Sensor PIR`  
+- `Sensor magnético`  
+- `Sensor de vibración`
+- `Relés de 12 V`
+- `Sirena piezoeléctrica o bocina`
+- `LEDs (alarma activada, todo seguro)`
+- `Resistencias`
+- `Fuente de alimentación (12 V)`
+- `Cables, protoboard o placa perforada, caja plástica`
 
 ## **`Requisitos`**
 
-- `Software necesario`  
-- `Librerías`  
-- `Hardware adicional`
+- `no necesita`  
+- `no necesita`  
+- `Fuente de alimentación estable (12 V)`
 
 `Completar una vez definido el proyecto.`
 
 ## **`Etapas del proyecto`**
 ### Etapa 1:
-- `Acción 1`
-- `Acción 2`
+- `Definir entradas (sensores) y salidas (sirena y LEDs)`
+- `Dibujar el diagrama eléctrico del sistema`
 
 ### Etapa 2:
-- `Acción 1`
-- `Acción 2`
+- `Comprar y reunir todos los componentes`
+- `Probar cada sensor individualmente con una salida simple (LED/lámpara)`
+
+### Etapa 3:
+- `Montar el circuito con relés y conexiones`
+- `Integrar sensores y salidas, verificando funcionamiento`
+
+### Etapa 4:
+- `Armar en una carcasa y asegurar las conexiones`
+- `Probar en condiciones reales y ajustar sensibilidad o tiempos`
 
 ## **`Extras`**
 
-- `Extra 1`  
-- `Extra 2`  
-- `Extra 3`
+- `Agregar batería de respaldo para cortes de luz`  
+- `Instalar interruptor para activar/desactivar el sistema fácilmente`  
+- `Añadir más sensores para cubrir otras zonas`

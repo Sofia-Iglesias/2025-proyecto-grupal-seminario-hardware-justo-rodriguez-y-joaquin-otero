@@ -1,0 +1,42 @@
+Sensor de movimiento:
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+Es un sensor. Su función es detectar movimiento de personas o animales midiendo cambios en radiación infrarroja en el ambiente.
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+Utiliza una señal digital (HIGH o LOW).
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+Puede entregar dos valores: HIGH (cuando detecta movimiento) y LOW (cuando no hay movimiento).
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+Tiene tres pines: VCC para alimentación (5V o 3.3V), GND para tierra eléctrica, y OUT que envía la señal digital al Arduino.
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+Se conecta a un pin digital del Arduino, por ejemplo D4. Se usa un pin digital porque el sensor entrega una señal digital y no una señal analógica.
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+Conexión: VCC del sensor al pin 5V del Arduino, OUT del sensor al pin digital (por ejemplo D4), y GND del sensor a GND del Arduino. No necesita resistencias ya que el módulo PIR tiene su propia electrónica interna.
+
+¿Cuál es el principio de funcionamiento del componente?
+Detecta variaciones en la radiación infrarroja generada por cuerpos calientes. Cuando detecta un cambio en esa radiación, activa la salida enviando un HIGH al Arduino.
+
+¿Utiliza alguna librería particular para programarlo?
+No utiliza librerías. Solo se usa digitalRead para leer su valor.
+
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+Se usa digitalRead(pin) para obtener el valor. Si devuelve HIGH hay movimiento. Si devuelve LOW no hay movimiento.
+
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+No invertir VCC y GND, alimentarlo con el voltaje adecuado (generalmente 5V), esperar unos segundos después de energizarlo para que se estabilice, y evitar colocarlo frente a fuentes de calor directo.
+
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Se conecta el sensor a Arduino, se lee su valor con digitalRead y se muestran los resultados en el monitor serie. Si se detecta movimiento, la lectura debe cambiar de LOW a HIGH.
+
+Simular en Tinkercad e incluir el link de la simulación.
+https://www.tinkercad.com/things/8Gn2z9ImwTX/editel?returnTo=%2Fdashboard
+
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+Espero obtener LOW cuando no hay movimiento y HIGH cuando el sensor detecta movimiento.
+
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Puede fallar si está mal conectado, si recibe alimentación incorrecta o si la sensibilidad está mal ajustada. Se detecta revisando el monitor serie: si siempre queda en LOW o siempre en HIGH, hay una falla en la conexión o en el sensor.
