@@ -34,7 +34,7 @@ Es importante usar una resistencia limitadora entre el LED y el GND para evitar 
 Se puede verificar el funcionamiento del LED cargando un programa sencillo en Arduino, como el clásico "Blink", que hace que el LED parpadee en intervalos regulares. Esto confirma que el LED se enciende y apaga correctamente.
 
 Simular en Tinkercad e incluir el link de la simulación.
-Para simularlo en Tinkercad: Inicia sesión, crea un nuevo circuito, añade un Arduino, un LED y una resistencia, y luego conecta todo como se explicó. Puedes hacer la simulación e incluir el enlace aquí.
+https://www.tinkercad.com/things/lxGFYJs9XWm-led/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard
 
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
 Si el componente funciona correctamente, el LED debería encenderse cuando el pin de Arduino está en estado HIGH y apagarse cuando el pin está en LOW. En la simulación, deberías ver el LED parpadear si usas un programa tipo "Blink".
